@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+    background-color: #fce4ec; /* Light pastel pink background */
+    font-family: 'Fredoka One', sans-serif; /* Friendly and cute font */
+    margin: 0;
+    font-size: 1.2vw;
+    color: #4a148c; /* Deep purple text for contrast */
+}
+
+/* Header Styles */
+header {
+    background-color: #ce93d8; /* Light pastel purple background */
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+h1 {
+    margin: 0;
+    padding: 8px;
+    font-size: 2.5em;
+    color: white;
+}
+
+/* Navigation Menu */
+#nav-ul {
+    display: flex;
+    list-style: none;
+}
+
+#nav-ul > li {
+    margin: 0 16px;
+}
+
+.navbutton {
+    color: white;
+    background-color: #f48fb1; /* Soft pink */
+    text-decoration: none;
+    padding: 12px 20px;
+    border: 3px solid white;
+    border-radius: 20px;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.navbutton:hover {
+    background-color: #ff3175; /* Darker pink on hover #f06292 */
+}
+
+/* Main Content */
+main {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* About Section */
+#about, #shop, #newsletter {
+    background-color: #e1bee7; /* Light lavender purple */
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+h2 {
+    font-size: 2em;
+    color: #880e4f; /* Darker purple for headings */
+}
+
+p {
+    font-size: 1.2em;
+    color: #6a1b9a; /* Medium purple */
+}
+
+/* Container for the color palette */
+.color-palette {
+    display: flex;
+    flex-wrap: wrap; /* Allows multiple rows */
+    gap: 15px; /* Space between color boxes */
+    margin-top: 15px; /* Space from the text above */
+}
+
+/* Individual color boxes */
+.color-box {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px; /* Make the squares slightly rounded */
+    border: 3px solid #ffffff; /* White border for contrast */
+}
+
+/* Colors */
+.red { background-color: red; }
+.dark-red { background-color: rgb(108, 0, 0); }
+.pink { background-color: rgb(255, 110, 209); }
+.pastel-pink { background-color: #ff9bc5; }
+.hot-pink { background-color: rgb(239, 0, 119); }
+.yellow { background-color: rgb(255, 221, 0); }
+.orange { background-color: orange; }
+.brown { background-color: rgb(138, 54, 1); }
+.royal-blue { background-color: rgb(0, 64, 255); }
+.pastel-blue { background-color: #97bdff; }
+.dark-blue { background-color: rgb(4, 4, 114); }
+.cyan { background-color: cyan; }
+.green { background-color: rgb(16, 93, 16); }
+.forest-green { background-color: forestgreen; }
+.sage-green { background-color: #9caf88; }
+.dark-purple { background-color: rgb(78, 0, 147); }
+.pastel-purple { background-color: #d1c4e9; }
+.white { background-color: white; }
+.black { background-color: black; }
+.grey { background-color: grey; }
+.turquoise { background-color: rgb(0, 202, 151); }
+.purple { background-color: rgb(166, 0, 255); }
+
+/* Shop Section */
+#shop article {
+    background-color: #fce4ec; /* Pink for articles */
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #f48fb1; /* Light pink border */
+    width: 80%;
+}
+
+
+
+
+
+
+/* Style for Shop Section */
+#shop ul {
+    list-style: none; /* Remove default bullet style */
+    padding-left: 0;
+    margin: 15px 0;
+}
+
+#shop ul li {
+    padding-left: 20px; /* Space between bullet and text */
+    margin: 10px 0;
+    font-size: 1.2em;
+    position: relative; /* To position custom bullet */
+}
+
+/* Custom pastel-colored bullet points */
+#shop ul li::before {
+    content: '●'; /* Bullet symbol */
+    font-size: 1.5em; /* Make the bullet larger */
+    color: #f48fb1; /* Pastel pink to match the theme */
+    position: absolute;
+    left: 0;
+    top: -5px; /* Align bullet with text */
+}
+
+
+h3 {
+    font-size: 1.5em;
+    color: #7b1fa2; /* Slightly darker purple for subheadings */
+}
+
+/* Newsletter Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"], input[type="email"], input[type="submit"] {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ce93d8;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    background-color: #f48fb1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #f06292;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #dd98e9; /* Rich pastel purple */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+#footer-ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+#footer-ul li {
+    margin: 0 20px;
+}
+
+#footer-ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+#footer-ul li a:hover {
+    color: #550355; /* Light pink hover for links */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        font-size: 3vw;
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #nav-ul {
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    #shop article {
+        width: 100%;
+    }
+}
